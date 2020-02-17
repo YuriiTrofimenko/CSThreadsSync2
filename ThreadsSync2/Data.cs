@@ -8,7 +8,7 @@ namespace ThreadsSync2
 {
     class Data
     {
-        // 1, 2
+        // 1, 2, 3
         private int state = 1;
 
         public void One()
@@ -20,6 +20,12 @@ namespace ThreadsSync2
         public void Two()
         {
             Console.WriteLine("Two");
+            state = 3;
+        }
+
+        public void Three()
+        {
+            Console.WriteLine("Three");
             state = 1;
         }
 
