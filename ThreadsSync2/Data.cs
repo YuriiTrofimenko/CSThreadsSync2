@@ -19,7 +19,7 @@ namespace ThreadsSync2
 
         public void Two()
         {
-            Console.WriteLine("Two");
+            Console.Write("Two-");
             state = 3;
         }
 

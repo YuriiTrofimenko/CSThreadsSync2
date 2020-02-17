@@ -14,6 +14,7 @@ namespace ThreadsSync2
             Data data = new Data();
             new Thread(new Worker(1, data, 10).Start).Start();
             new Thread(new Worker(2, data, 10).Start).Start();
+            new Thread(new Worker(3, data, 10).Start).Start();
         }
     }
 }

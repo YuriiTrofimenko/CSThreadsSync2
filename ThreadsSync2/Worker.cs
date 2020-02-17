@@ -37,8 +37,11 @@ namespace ThreadsSync2
                         case 2:
                             data.Two();
                             break;
+                        case 3:
+                            data.Three();
+                            break;
                     }
-                    Monitor.Pulse(data);
+                    Monitor.PulseAll(data);
                 }
             }
         }
